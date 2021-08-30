@@ -1,10 +1,96 @@
 * {
   font-family: sans-serif;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 35px;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-section {
+  background-color: #000;
+  color: #fff;
+  padding: 15rem 0;
+}
+
+.hero-section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.call-to-action {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.call-to-action a {
+  text-decoration: transparent;
+  color: inherit;
+  transition: all 0.5s;
+  border: 1px solid #fff;
+  padding: 1rem;
+}
+
+.call-to-action a:hover {
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+.team-section h2 {
+  text-align: center;
+}
+
+.team-section {
+  max-width: 1000px;
+  margin: 100px auto;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.team-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.team-grid-item-avatar-container {
+  max-width: 300px;
+}
+
+.team-grid-item-avatar {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.team-grid-item-role {
+  font-style: italic;
+}
+
+
+footer {
+  margin-top: 35px;
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .hero-section {
+    text-align: center;
+    padding-top: 11rem;
+  }
+  .team-grid {
+    grid-template-columns: 1fr ;
+  }
 }

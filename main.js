@@ -1,19 +1,3 @@
-const projectGalleryContainer = $(".project-gallery-container");
-
-projectGalleryContainer.animate({scrollLeft: 0}, 1000);
-
-let rolling; 
-
-projectGalleryContainer.on("mouseenter", () => {
-  clearInterval(rolling);
-})
-
-projectGalleryContainer.on("mouseleave", () => {
-  rolling = setInterval(scrollContainer, 1000)
-})
-
-
-function scrollContainer() {
-  projectGalleryContainer.animate({scrollLeft: "+=150px"}, 1000)
-}
-
+const wrapper = $(".wrapper");
+wrapper.css({'opacity': 0}, 1000);
+wrapper.animate({'opacity': 1}, 1000);
