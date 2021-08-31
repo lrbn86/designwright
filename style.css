@@ -15,7 +15,8 @@ body {
 .hero-section {
   background-color: #000;
   color: #fff;
-  padding: 15rem 0;
+  padding-top: 10rem;
+  padding-bottom: 60rem;
 }
 
 .hero-section-content {
@@ -85,10 +86,10 @@ footer {
   padding: 1rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
   .hero-section {
     text-align: center;
-    padding-top: 11rem;
+    padding-top: 5rem;
   }
   .team-grid {
     grid-template-columns: 1fr ;
