@@ -1,3 +1,13 @@
 const wrapper = $(".wrapper");
-wrapper.css({'opacity': 0}, 1000);
-wrapper.animate({'opacity': 1}, 1000);
+const elems = wrapper.children();
+const callToAction = $(".call-to-action")
+callToAction.hide();
+
+const heroSectionContent = $('.hero-section-content').children();
+heroSectionContent.hide();
+
+$(heroSectionContent).each(function(index) {
+  $(this).delay(100*index).slideDown();
+}).promise().done(() => {
+  callToAction.fadeIn();
+})
