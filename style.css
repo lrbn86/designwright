@@ -3,54 +3,72 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 35px;
-}
-
 body {
   margin: 0;
 }
 
-.hero-section {
-  background-color: #000;
-  color: #fff;
-  padding-top: 10rem;
-  padding-bottom: 60rem;
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
-.hero-section-content {
-  max-width: 800px;
-  margin: 0 auto;
+section {
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
-.call-to-action {
-  text-align: center;
-  margin: 100px 0;
-}
-
-.call-to-action a {
-  text-decoration: transparent;
-  border: 1px solid #fff;
-  color: inherit;
+nav {
+  position: absolute;
+  top: 3rem;
+  right: 5rem;
+  background-color: rgba(0, 0, 0, 0.514);
   transition: all 0.5s;
+}
+
+nav:hover {
+  border-radius: 5px;
+  background-color: #000;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
   padding: 1rem;
-  font-size: 2rem;
+  border: 1px solid #fff;
+  margin: 1rem;
+  color: #fff;
+  transition: all 0.3s;
 }
 
-.call-to-action a:hover {
-  text-decoration: underline;
-  border-radius: 15px;
-  padding: 2rem;
+nav a:hover {
+  border-radius: 5px;
 }
 
-.team-section h2 {
-  text-align: center;
+.hero-section {
+  color: #fff;
+  background-color: #171717;
+}
+
+h1 {
+  margin: 0;
+}
+
+
+.section-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.work-section {
+  color: #fff;
+  background-color: #444444;
 }
 
 .team-section {
-  max-width: 1000px;
-  margin: 100px auto;
+  background-color: #EDEDED;
 }
 
 .team-grid {
@@ -59,40 +77,23 @@ body {
 }
 
 .team-grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border: 1px solid #000;
-  margin: 5px;
-  padding: 15px;
-  border-radius: 10px;
-}
-.team-grid-item-avatar-container {
-  max-width: 300px;
-}
-
-.team-grid-item-avatar {
-  border-radius: 50%;
-  width: 100%;
-}
-
-.team-grid-item-role {
-  font-style: italic;
-}
-
-footer {
-  margin-top: 35px;
-  background-color: #000;
-  color: #fff;
+  margin: 1rem;
   padding: 1rem;
+  transition: all 0.5s;
 }
 
-@media screen and (max-width: 1024px) {
-  .hero-section {
-    text-align: center;
-    padding-top: 5rem;
-  }
-  .team-grid {
-    grid-template-columns: 1fr ;
+.team-grid-item:hover {
+  border-radius: 5px;
+}
+
+.contact-section {
+  color: #fff;
+  background-color: #DA0037;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    display: none;
   }
 }
