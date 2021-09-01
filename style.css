@@ -6,7 +6,6 @@
 body {
   margin: 0;
   background-color: #000;
-  overflow: hidden;
 }
 
 
@@ -49,7 +48,7 @@ nav a:hover {
 .section-content {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 5rem;
+  padding: 1rem;
 }
 
 .work-section {
@@ -75,6 +74,11 @@ nav a:hover {
   margin: 1rem;
   padding: 1em;
   transition: all 0.5s;
+}
+
+.team-grid-item-avatar {
+  width: 70%;
+  border-radius: 50%;
 }
 
 .team-grid-item p {
@@ -108,6 +112,11 @@ nav a:hover {
 .social-links a {
   color: inherit;
   margin-right: 2rem;
+  transition: all 0.3s;
+}
+
+.social-links a:hover {
+  color: #000;
 }
 
 @media screen and (max-width: 760px) {
@@ -126,13 +135,13 @@ nav a:hover {
   .team-grid-item {
   }
   
-  .social-links a {
-    margin-right: 1rem;
-  }
-  
 }
 
 @media screen and (min-width: 768px) {
+
+  body {
+    overflow: hidden;
+  }
   
   main {
     height: 100vh;
