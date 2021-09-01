@@ -9,17 +9,6 @@ body {
   overflow: hidden;
 }
 
-main {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
-
-section {
-  height: 100vh;
-  scroll-snap-align: center;
-}
 
 nav {
   position: absolute;
@@ -48,6 +37,10 @@ nav a:hover {
   border-radius: 5px;
 }
 
+.hero {
+  font-size: 2rem;
+}
+
 .hero-section {
   color: #fff;
   background-color: #171717;
@@ -74,19 +67,27 @@ nav a:hover {
 }
 
 .team-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   border: 1px solid #000;
   margin: 1rem;
-  padding: 1rem;
+  padding: 1em;
   transition: all 0.5s;
+}
+
+.team-grid-item p {
+  font-style: italic;
+  text-align: center;
 }
 
 .team-grid-item-links a {
   display: inline-block;
   color: inherit;
   text-decoration: none;
-  margin-right: 1rem;
-  padding: 1rem;
   border: 1px solid transparent;
+  padding: 1rem;
   transition: all 0.5s;
 }
 
@@ -109,17 +110,39 @@ nav a:hover {
   margin-right: 2rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 760px) {
+
+  .hero {
+    font-size: 1rem;
+  }
   nav {
     display: none;
   }
-
-  .team-section{
-    display: none;
+  
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 
+  .team-grid-item {
+  }
+  
   .social-links a {
     margin-right: 1rem;
   }
+  
+}
 
+@media screen and (min-width: 768px) {
+  
+  main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
+  
+  section {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
 }
