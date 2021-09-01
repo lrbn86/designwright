@@ -5,6 +5,8 @@
 
 body {
   margin: 0;
+  background-color: #000;
+  overflow: hidden;
 }
 
 main {
@@ -16,13 +18,13 @@ main {
 
 section {
   height: 100vh;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 nav {
   position: absolute;
   top: 3rem;
-  right: 5rem;
+  right: -25rem;
   background-color: rgba(0, 0, 0, 0.514);
   transition: all 0.5s;
 }
@@ -51,11 +53,6 @@ nav a:hover {
   background-color: #171717;
 }
 
-h1 {
-  margin: 0;
-}
-
-
 .section-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -83,6 +80,21 @@ h1 {
   transition: all 0.5s;
 }
 
+.team-grid-item-links a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+}
+
+.team-grid-item-links a:hover {
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
 .team-grid-item:hover {
   border-radius: 5px;
 }
@@ -92,8 +104,22 @@ h1 {
   background-color: #DA0037;
 }
 
+.social-links a {
+  color: inherit;
+  margin-right: 2rem;
+}
+
 @media screen and (max-width: 800px) {
   nav {
     display: none;
   }
+
+  .team-section{
+    display: none;
+  }
+
+  .social-links a {
+    margin-right: 1rem;
+  }
+
 }
