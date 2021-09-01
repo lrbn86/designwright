@@ -2,13 +2,10 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   background-color: #000;
 }
-
-
 nav {
   position: absolute;
   top: 3rem;
@@ -16,12 +13,10 @@ nav {
   background-color: rgba(0, 0, 0, 0.514);
   transition: all 0.5s;
 }
-
 nav:hover {
   border-radius: 5px;
   background-color: #000;
 }
-
 nav a {
   display: block;
   text-decoration: none;
@@ -31,40 +26,28 @@ nav a {
   color: #fff;
   transition: all 0.3s;
 }
-
 nav a:hover {
   border-radius: 5px;
 }
-
 .hero {
   font-size: 2rem;
 }
-
 .hero-section {
   color: #fff;
   background-color: #171717;
 }
-
 .section-content {
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem;
 }
-
-.work-section {
-  color: #fff;
-  background-color: #444444;
-}
-
 .team-section {
   background-color: #EDEDED;
 }
-
 .team-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 .team-grid-item {
   display: flex;
   flex-direction: column;
@@ -75,17 +58,14 @@ nav a:hover {
   padding: 1em;
   transition: all 0.5s;
 }
-
 .team-grid-item-avatar {
   width: 55%;
   border-radius: 50%;
 }
-
 .team-grid-item p {
   font-style: italic;
   text-align: center;
 }
-
 .team-grid-item-links a {
   display: inline-block;
   color: inherit;
@@ -94,64 +74,47 @@ nav a:hover {
   padding: 1rem;
   transition: all 0.5s;
 }
-
 .team-grid-item-links a:hover {
   border: 1px solid #000;
   border-radius: 5px;
 }
-
 .team-grid-item:hover {
   border-radius: 5px;
 }
-
 .contact-section {
   color: #fff;
   background-color: #DA0037;
 }
-
 .social-links a {
   color: inherit;
   margin-right: 2rem;
   transition: all 0.3s;
 }
-
 .social-links a:hover {
   color: #000;
 }
-
 @media screen and (max-width: 813px) {
-
   .hero {
     height: 100vh;
     font-size: 1.5rem;
   }
-
   nav {
     display: none;
   }
-  
   .team-grid {
     grid-template-columns: 1fr;
   }
-
-  .team-grid-item {
-  }
-  
 }
-
 @media screen and (min-width: 814px) {
-
   body {
     overflow: hidden;
   }
-  
   main {
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
   }
-  
   section {
     height: 100vh;
     scroll-snap-align: center;
