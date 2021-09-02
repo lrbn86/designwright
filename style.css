@@ -44,10 +44,6 @@ nav a:hover {
 .team-section {
   background-color: #EDEDED;
 }
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
 .team-grid-item {
   display: flex;
   flex-direction: column;
@@ -85,38 +81,26 @@ nav a:hover {
   color: #fff;
   background-color: #DA0037;
 }
+#contact {
+  text-align: center;
+}
 .social-links a {
   color: inherit;
-  margin-right: 2rem;
+  margin: 0 1rem;
   transition: all 0.3s;
 }
 .social-links a:hover {
   color: #000;
 }
-@media screen and (max-width: 813px) {
-  .hero {
-    height: 100vh;
-    font-size: 1.5rem;
-  }
-  nav {
-    display: none;
-  }
+@media (min-width: 300px) {
   .team-grid {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
-@media screen and (min-width: 814px) {
-  body {
-    overflow: hidden;
-  }
-  main {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-  section {
-    height: 100vh;
-    scroll-snap-align: center;
+
+@media (min-width: 800px) {
+  .team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
