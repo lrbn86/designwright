@@ -78,7 +78,7 @@ nav a:hover {
 }
 .contact-section {
   color: #fff;
-  background-color: #DA0037;
+  background-color: #0096e0;
 }
 #contact {
   text-align: center;
@@ -89,14 +89,13 @@ nav a:hover {
   transition: all 0.3s;
 }
 .social-links a:hover {
-  color: #000;
+  color: #171717;
 }
 @media (min-width: 300px) {
   .team-grid {
     display: block;
   }
 }
-
 @media (min-width: 800px) {
   .team-grid {
     display: grid;
