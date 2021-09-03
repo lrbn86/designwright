@@ -29,9 +29,6 @@ nav a {
 nav a:hover {
   border-radius: 5px;
 }
-.hero {
-  font-size: 2rem;
-}
 .hero-section {
   color: #fff;
   background-color: #171717;
@@ -92,11 +89,17 @@ nav a:hover {
   color: #171717;
 }
 @media (min-width: 300px) {
+  .hero {
+    font-size: 1.5rem;
+  }
   .team-grid {
     display: block;
   }
 }
 @media (min-width: 800px) {
+  .hero {
+    font-size: 2rem;
+  }
   .team-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
