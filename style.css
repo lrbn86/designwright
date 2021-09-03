@@ -29,22 +29,10 @@ nav a {
 nav a:hover {
   border-radius: 5px;
 }
-.hero-section-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: url("./assets/management.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: .2;
-}
 .hero-section {
   color: #fff;
+  background-color: #171717;
 }
-
 .section-content {
   max-width: 1000px;
   margin: 0 auto;
@@ -87,7 +75,7 @@ nav a:hover {
 }
 .contact-section {
   color: #fff;
-  background-color: #0096e0;
+  background-color: #171717;
 }
 #contact {
   text-align: center;
@@ -98,9 +86,12 @@ nav a:hover {
   transition: all 0.3s;
 }
 .social-links a:hover {
-  color: #171717;
+  color: #6e90a0;
 }
 @media (min-width: 300px) {
+  .logo {
+    width: 50%;
+  }
   .hero {
     font-size: 1.5rem;
   }
