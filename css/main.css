@@ -2,109 +2,36 @@
   font-family: sans-serif;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  background-color: #000;
+  background-color: #171717;
+  color: #fff;
 }
+
+.wrapper {
+
+}
+
+header {
+  position: relative;
+}
+
 nav {
   position: absolute;
-  top: 3rem;
-  right: -25rem;
-  background-color: rgba(0, 0, 0, 0.514);
-  transition: all 0.5s;
+  right: 0;
+  padding: 3rem;
 }
-nav:hover {
-  border-radius: 5px;
-  background-color: #000;
-}
-nav a {
-  display: block;
+
+nav > a {
   text-decoration: none;
-  padding: 1rem;
-  border: 1px solid #fff;
-  margin: 1rem;
-  color: #fff;
-  transition: all 0.3s;
+  color: inherit;
+  margin-right: 3rem;
 }
-nav a:hover {
-  border-radius: 5px;
-}
-.hero-section {
-  color: #fff;
-  background-color: #171717;
-}
-.section-content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-.team-section {
-  background-color: #EDEDED;
-}
-.team-grid-item {
+
+main {
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  border: 1px solid #000;
-  margin: 1rem;
-  padding: 1em;
-  transition: all 0.5s;
-}
-.team-grid-item-avatar {
-  width: 55%;
-  border-radius: 50%;
-}
-.team-grid-item p {
-  text-align: center;
-}
-.team-grid-item-links a {
-  display: inline-block;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid transparent;
-  padding: 1rem;
-  transition: all 0.5s;
-}
-.team-grid-item-links a:hover {
-  border: 1px solid #000;
-  border-radius: 5px;
-}
-.team-grid-item:hover {
-  border-radius: 5px;
-}
-.contact-section {
-  color: #fff;
-  background-color: #171717;
-}
-#contact {
-  text-align: center;
-}
-.social-links a {
-  color: inherit;
-  margin: 0 1rem;
-  transition: all 0.3s;
-}
-.social-links a:hover {
-  color: #6e90a0;
-}
-@media (min-width: 300px) {
-  .logo {
-    width: 50%;
-  }
-  .hero {
-    font-size: 1.5rem;
-  }
-  .team-grid {
-    display: block;
-  }
-}
-@media (min-width: 800px) {
-  .hero {
-    font-size: 2rem;
-  }
-  .team-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  justify-content: space-evenly;
 }
