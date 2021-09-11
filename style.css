@@ -39,7 +39,7 @@ nav a:hover {
   padding: 1rem;
 }
 .team-section {
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 .team-grid-item {
   display: flex;
@@ -87,6 +87,21 @@ nav a:hover {
 }
 .social-links a:hover {
   color: #6e90a0;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #121212;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #fafafa;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  border-right: 2px solid #6e90a0;
 }
 @media (min-width: 300px) {
   .logo {
