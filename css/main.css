@@ -1,11 +1,21 @@
+:root {
+  --BG: #fff;
+  --TEXT: #000;
+}
+
 * {
   font-family: sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #232e33;
-  color: #fff;
+  background-color: var(--BG);
+  color: var(--TEXT);
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 a {
@@ -37,6 +47,15 @@ a {
   font-style: italic;
 }
 
+.member {
+  margin-bottom: 5rem;
+}
+
+.avatar {
+  width: 15rem;
+  border-radius: 50%;
+}
+
 /* Mobile Design */
 @media (min-width: 300px) {
   
@@ -44,7 +63,7 @@ a {
     position: sticky;
     top: 0;
     padding-top: 1rem;
-    background-color: #232e33;
+    background-color: var(--BG) ;
   }
   
   .menu-button {
@@ -63,12 +82,12 @@ a {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #232e33;
+    background-color: #fff;
   }
   
   nav > a {
     margin: 2.5rem;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     padding: 1rem;
     border-radius: 5px;
   }
@@ -94,10 +113,6 @@ a {
 
 /* Desktop Design */
 @media (min-width: 1000px) {
-  
-  body {
-    margin: 0;
-  }
 
   header {
     position: relative;
@@ -106,8 +121,6 @@ a {
     justify-content: space-between;
     padding-bottom: 1rem;
     border-bottom: 1px solid #fff;
-    max-width: 1440px;
-    margin: 0 auto;
   }
   
   .nav-display {
@@ -146,41 +159,39 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 
-  .hero-content > h1{
-    font-size: 4rem;
-  }
-
-  .hero-content > p {
-    font-size: 1.5rem;
-  }
-
-  .hero-image {
-    width: 60%;
+  .hero-content {
+    font-size: 2rem;
   }
   
   .discover-section {
-    max-width: 1000px;
-    margin: 0 auto;
     padding-bottom: 5rem;
-  }
-
-  .discover-section > h1 {
-    font-size: 4rem;
   }
 
   .card {
     margin: 1rem;
-    font-size: 1.1rem;
   }
   
   .cards {
     flex-direction: row;
+  }
+
+  .team-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .member {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .member-desc {
+    padding-left: 5rem;
   }
 }
 
