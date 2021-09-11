@@ -4,34 +4,177 @@
 }
 
 body {
-  margin: 0;
-  background-color: #171717;
+  background-color: #232e33;
   color: #fff;
 }
 
-.wrapper {
-
-}
-
-header {
-  position: relative;
-}
-
-nav {
-  position: absolute;
-  right: 0;
-  padding: 3rem;
-}
-
-nav > a {
+a {
   text-decoration: none;
   color: inherit;
-  margin-right: 3rem;
 }
 
-main {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+.discover-section > h1 {
+  text-align: center;
 }
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card > h2 {
+  text-align: center;
+}
+
+
+/* Mobile Design */
+@media (min-width: 300px) {
+  
+  header {
+    position: sticky;
+    top: 0;
+    padding-top: 1rem;
+    background-color: #232e33;
+  }
+  
+  .menu-button {
+    position: absolute;
+    right: 0;
+  }
+  
+  .nav-display {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #232e33;
+  }
+  
+  nav > a {
+    margin: 2.5rem;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+  
+  .logo-container > img {
+    width: 30%;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+  
+  .hero-image {
+    width: 50%;
+  }
+
+  footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 1rem;
+  }
+}
+
+/* Desktop Design */
+@media (min-width: 1000px) {
+  
+  body {
+    margin: 0;
+  }
+
+  header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  
+  .nav-display {
+    display: block;
+  }
+  
+  nav {
+    width: auto;
+    height: auto;
+    position: static;
+  }
+  
+  nav > a {
+    border: none;
+    padding: auto;
+    text-decoration: transparent;
+    transition: all 0.5s;
+  }
+  
+  nav > a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+  .logo-container > img {
+    width: 30%;
+  }
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-content > h1{
+    font-size: 4rem;
+  }
+
+  .hero-content > p {
+    font-size: 1.5rem;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+  
+  .discover-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
+  .discover-section > h1 {
+    font-size: 4rem;
+  }
+
+  .card {
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .cards {
+    flex-direction: row;
+  }
+}
+
