@@ -33,6 +33,9 @@ a {
   text-align: center;
 }
 
+.card-link {
+  font-style: italic;
+}
 
 /* Mobile Design */
 @media (min-width: 300px) {
@@ -120,11 +123,14 @@ a {
   nav > a {
     border: none;
     padding: auto;
+  }
+
+  nav > a, .card-link {
     text-decoration: transparent;
     transition: all 0.5s;
   }
   
-  nav > a:hover {
+  nav > a:hover, .card-link:hover {
     text-decoration: underline;
   }
   
