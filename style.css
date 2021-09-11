@@ -31,7 +31,8 @@ nav a:hover {
 }
 .hero-section {
   color: #fff;
-  background-color: #171717;
+  /*background-color: #171717;*/
+  background-image: linear-gradient(to bottom right, #444444, black);
 }
 .section-content {
   max-width: 1000px;
@@ -39,7 +40,8 @@ nav a:hover {
   padding: 1rem;
 }
 .team-section {
-  background-color: #ededed;
+  /*background-color: #ededed;*/
+  background-image: linear-gradient(to bottom left, white, rgb(88, 88, 88));
 }
 .team-grid-item {
   display: flex;
@@ -91,7 +93,6 @@ nav a:hover {
 
 #navbar {
   overflow: hidden;
-  background-color: #121212;
 }
 
 #navbar a {
@@ -103,11 +104,6 @@ nav a:hover {
   text-decoration: none;
   border-right: 2px solid #6e90a0;
 }
-
-#emailA {
-   color:#fafafa;
-}
-
 @media (min-width: 300px) {
   .logo {
     width: 50%;
