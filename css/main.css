@@ -1,8 +1,10 @@
+/* CSS variables to change properties quickly */
 :root {
   --BG: #fff;
   --TEXT: #000;
 }
 
+/* Global Design - These CSS styles applies to both mobile and desktop */
 * {
   font-family: sans-serif;
   box-sizing: border-box;
@@ -65,7 +67,16 @@ a {
   text-decoration: underline;
 }
 
-/* Mobile Design */
+.about-component-2 {
+  background-color: #abbec8;
+}
+
+.about-component-2, .about-component-3 {
+   padding: 1rem;
+}
+/* end Global Design */
+
+/* Mobile Design - These CSS only applies when the screen's width is bigger than 300px */
 @media (min-width: 300px) {
   
   header {
@@ -104,7 +115,7 @@ a {
   .logo-container > img {
     width: 30%;
   }
-
+  
   .hero-section {
     text-align: center;
   }
@@ -112,14 +123,18 @@ a {
   .hero-image {
     width: 50%;
   }
+  
+  .about-component-content > img {
+    width: 80%;
+  }
 
   footer {
     text-align: center;
     padding: 1rem;
   }
-}
+} /* end Mobile Design */
 
-/* Desktop Design */
+/* Desktop Design - These CSS styles only apply when the screen's width is bigger than 1000px */
 @media (min-width: 1000px) {
 
   header {
@@ -202,14 +217,6 @@ a {
     padding-left: 5rem;
   }
 
-  .about-component-2 {
-    background-color: #abbec8;
-  }
-
- .about-component-2, .about-component-3 {
-    padding: 2rem;
-  }
-
   .about-component-content {
     display: flex;
     align-items: center;
@@ -227,5 +234,5 @@ a {
     align-items: center;
     justify-content: space-around;
   }
-}
+} /* end Desktop Design */
 
