@@ -33,7 +33,7 @@ a {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: #abbec8;
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -106,7 +106,6 @@ a {
 
   footer {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.15);
     padding: 1rem;
   }
 }
@@ -192,6 +191,32 @@ a {
 
   .member-desc {
     padding-left: 5rem;
+  }
+
+  .about-component-2 {
+    background-color: #abbec8;
+  }
+
+ .about-component-2, .about-component-3 {
+    padding: 2rem;
+  }
+
+  .about-component-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-component-content > img {
+    width: 50%;
+    border-radius: 5px;
+    margin: 2rem;
+  }
+
+  .component-column-listing {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
 }
 
