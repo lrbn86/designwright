@@ -56,6 +56,15 @@ a {
   border-radius: 50%;
 }
 
+.portfolio-link {
+  text-decoration: transparent;
+  transition: all 0.5s;
+}
+
+.portfolio-link:hover {
+  text-decoration: underline;
+}
+
 /* Mobile Design */
 @media (min-width: 300px) {
   
