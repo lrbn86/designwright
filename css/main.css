@@ -222,6 +222,12 @@ a {
     padding-bottom: 5rem;
   }
 
+ .hero-image-bg{
+  width: 40%;
+  z-index: -5;
+  position: absolute;
+  left: 800px;
+  }
   .hero-content {
     font-size: 2rem;
   }
