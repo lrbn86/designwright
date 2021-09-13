@@ -107,6 +107,9 @@ a {
   
   .nav-display {
     display: none;
+	position: relative;
+	right: 10px;
+	
   }
   
   nav {
@@ -184,6 +187,7 @@ a {
   
   .nav-display {
     display: block;
+	
   }
   
   nav {
@@ -222,12 +226,6 @@ a {
     padding-bottom: 5rem;
   }
 
- .hero-image-bg{
-  width: 40%;
-  z-index: -5;
-  position: absolute;
-  left: 800px;
-  }
   .hero-content {
     font-size: 2rem;
   }
