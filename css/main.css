@@ -13,6 +13,7 @@
 body {
   background: linear-gradient(180deg, #232E33 0%, #6E90A0 79.55%, #ABBEC8 98.88%, #FFFFFF 125.72%);
   color: var(--TEXT);
+  background-repeat: no-repeat;
 }
 
 .wrapper {
@@ -240,6 +241,8 @@ a {
   .team-container {
     max-width: 1200px;
     margin: 0 auto;
+	background-color: #E9EFF2;
+	padding: 0 10px 10px;
   }
 
   .member {
