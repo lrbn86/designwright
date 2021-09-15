@@ -11,14 +11,13 @@
 }
 
 body {
+  margin: 0;
   background: linear-gradient(180deg, #232E33 0%, #6E90A0 79.55%, #ABBEC8 98.88%, #FFFFFF 125.72%);
   color: var(--TEXT);
   background-repeat: no-repeat;
 }
 
 .wrapper {
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 a {
@@ -66,15 +65,17 @@ a {
 
 .about-component-1{
 	background-color: #E9EFF2;
-	padding-bottom: 10px;
+  padding: 1rem;
 }
 
 .about-component-2 {
   background-color: #abbec8;
+  padding: 1rem;
 }
 
 .about-component-3{
 	background-color: #E9EFF2;
+  padding: 1rem;
 }
 
 .about-component-2, .about-component-3 {
@@ -125,31 +126,31 @@ a {
   }
   
   .discover-section > h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 60px;
-  text-align: center;
-  color: #E9EFF2
-}
-	
-  .hero-section {
-	font-family: Source Sans Pro;
-	font-style: normal;
-	text-align: left;
-	color: #E9EFF2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+    color: #E9EFF2
   }
 	
-   .hero-section > h1{
-	font-weight: bold;
-	font-size: 100px;
-	line-height: 126px;	
+  .hero-section {
+    font-family: Source Sans Pro;
+    font-style: normal;
+    text-align: left;
+    color: #E9EFF2;
+  }
+	
+  .hero-section > h1{
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 126px;	
   }
 	
   .hero-section > p{
-	font-weight: bold;
-	font-size: 35px;
-	line-height: 44px;	
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;	
   }
 	
   .hero-image {
@@ -157,10 +158,10 @@ a {
   }
 	
   .hero-image-bg{
-	width: 50%;
-	z-index: -5;
-	position: absolute;
-	left: 700px;
+    width: 50%;
+    z-index: -5;
+    position: absolute;
+    left: 700px;
   }
   
   .about-component-content > img {
@@ -182,12 +183,10 @@ a {
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #FFFFFF;
   }
   
   .nav-display {
     display: block;
-	
   }
   
   nav {
@@ -217,15 +216,6 @@ a {
   .logo-container > img {
     width: 30%;
   }
-  
-  .discover-section > h1 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 80px;
-  line-height: 101px;
-  text-align: center;
-  color: #E9EFF2
-}
 	
   .hero-section {
     display: flex;
@@ -252,10 +242,8 @@ a {
   }
 
   .team-container {
-    max-width: 1200px;
-    margin: 0 auto;
-	background-color: #E9EFF2;
-	padding: 0 10px 10px;
+    background-color: #E9EFF2;
+    padding: 2rem;
   }
 
   .member {
