@@ -185,4 +185,16 @@ section > h1 {
   .member-desc {
     padding-left: 2rem;
   }
+
+
+  .team-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .team-heading > p {
+    font-size: 30px;
+    padding-right: 8rem;
+  }
 }
