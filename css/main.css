@@ -1,277 +1,113 @@
-/* CSS variables to change properties quickly */
-:root {
-  --BG: #fff;
-  --TEXT: #000;
-}
+/* Mobile First Design */
 
-/* Global Design - These CSS styles applies to both mobile and desktop */
+/* Import Source Sans Pro font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap');
+
 * {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background: linear-gradient(180deg, #232E33 0%, #6E90A0 79.55%, #ABBEC8 98.88%, #FFFFFF 125.72%);
-  color: var(--TEXT);
-  background-repeat: no-repeat;
+  color: #232E33;
+  padding: 2rem;
 }
 
-.wrapper {
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.cards {
+header {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 30px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card > h2 {
+nav > a {
+  text-decoration: none;
+  color: inherit;
+  margin: 1rem;
+}
+
+main {
+  padding-bottom: 5rem;
+}
+
+footer {
   text-align: center;
 }
 
+footer > a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+section > h1 {
+  text-align: center;
+  padding: 2rem;
+}
+
+.card {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  padding: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+  padding-top: 7rem;
+}
+
+.card-heading {
+  position: absolute;
+  top: 1rem;
+  left: -.6rem;
+}
+
+.card-heading > h2 {
+  position: absolute;
+  top: .5rem;
+  left: 4rem;
+  color: #fff;
+}
+
 .card-link {
+  text-decoration: none;
+  line-height: 1.5rem;
+  color: inherit;
   font-style: italic;
 }
 
-.member {
-  margin-bottom: 5rem;
+.card-link > img {
+  display: inline-block;
+  padding-top: .3rem;
+  padding-left: 1rem;
 }
 
-.avatar {
-  width: 15rem;
-  border-radius: 50%;
+.down-arrow-container {
+  text-align: center;
+  padding: 4rem;
 }
 
-.portfolio-link {
-  text-decoration: transparent;
-  transition: all 0.5s;
+.down-arrow-container > img {
+  width: 20%;
 }
 
-.portfolio-link:hover {
-  text-decoration: underline;
+.logo-container {
+  width: 80%;
 }
 
-.about-component-1{
-	background-color: #E9EFF2;
-  padding: 1rem;
+.logo-container img {
+  width: 100%;
+  height: 100%;
 }
 
-.about-component-2 {
-  background-color: #abbec8;
-  padding: 1rem;
+.hero-image-container img {
+  width: 100%;
+  height: 100%;
 }
-
-.about-component-3{
-	background-color: #E9EFF2;
-  padding: 1rem;
-}
-
-.about-component-2, .about-component-3 {
-   padding: 1rem;
-}
-/* end Global Design */
-
-/* Mobile Design - These CSS only applies when the screen's width is bigger than 300px */
-@media (min-width: 300px) {
-  
-  header {
-    position: sticky;
-    top: 0;
-    padding-top: 1rem;
-  }
-  
-  .menu-button {
-    position: absolute;
-    right: 0;
-  }
-  
-  .nav-display {
-    display: none;
-	position: relative;
-	right: 10px;
-	
-  }
-  
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  nav > a {
-    margin: 2.5rem;
-    border: 1px solid #000;
-    padding: 1rem;
-    border-radius: 5px;
-	color: #FFFFFF
-  }
-  
-  .logo-container > img {
-    width: 30%;
-  }
-  
-  .discover-section > h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 60px;
-    text-align: center;
-    color: #E9EFF2
-  }
-	
-  .hero-section {
-    font-family: Source Sans Pro;
-    font-style: normal;
-    text-align: left;
-    color: #E9EFF2;
-  }
-	
-  .hero-section > h1{
-    font-weight: bold;
-    font-size: 100px;
-    line-height: 126px;	
-  }
-	
-  .hero-section > p{
-    font-weight: bold;
-    font-size: 35px;
-    line-height: 44px;	
-  }
-	
-  .hero-image {
-    width: 50%;
-  }
-	
-  .hero-image-bg{
-    width: 50%;
-    z-index: -5;
-    position: absolute;
-    left: 700px;
-  }
-  
-  .about-component-content > img {
-    width: 80%;
-  }
-
-  footer {
-    text-align: center;
-    padding: 1rem;
-  }
-} /* end Mobile Design */
-
-/* Desktop Design - These CSS styles only apply when the screen's width is bigger than 1000px */
-@media (min-width: 1000px) {
-
-  header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 1rem;
-  }
-  
-  .nav-display {
-    display: block;
-  }
-  
-  nav {
-    width: auto;
-    height: auto;
-    position: static;
-  }
-  
-  nav > a {
-    border: none;
-    padding: auto;
-  }
-
-  nav > a, .card-link {
-    text-decoration: transparent;
-    transition: all 0.5s;
-  }
-  
-  nav > a:hover, .card-link:hover {
-    text-decoration: underline;
-  }
-  
-  .menu-button {
-    display: none;
-  }
-  
-  .logo-container > img {
-    width: 30%;
-  }
-	
-  .hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .hero-content {
-    font-size: 2rem;
-  }
-  
-  .discover-section {
-    padding-bottom: 5rem;
-  }
-
-  .card {
-    margin: 1rem;
-  }
-  
-  .cards {
-    flex-direction: row;
-  }
-
-  .team-container {
-    background-color: #E9EFF2;
-    padding: 2rem;
-  }
-
-  .member {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
-  .member-desc {
-    padding-left: 5rem;
-  }
-
-  .about-component-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .about-component-content > img {
-    width: 50%;
-    border-radius: 5px;
-    margin: 2rem;
-  }
-
-  .component-column-listing {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-} /* end Desktop Design */
-

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DesignWright's website for CGT41101 at Purdue University - West Lafayette, Indiana. Ariana Eskew, Anika Antony, Angela Zhou, Katie Jewell, Jake Donovan, Brandon Nguyen">
   <title>DesignWright | Home</title>
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/logo/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" />
   <link rel="stylesheet" href="./css/main.css" media="all">
   <script src="./js/jquery-3.6.0.min.js" defer></script>
@@ -14,63 +14,77 @@
 </head>
 <body>
 
-  <div class="wrapper">
+  <!-- GLOBAL HEADER -->
+  <header>
+    <div class="logo-container">
+      <img src="./assets/logo/logo.png" alt="logo of DesignWright">
+    </div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/team/">Our Team</a>
+      <a href="/work/">Past Work</a>
+    </nav>
+  </header>
+  <!-- GLOBAL HEADER -->
 
-    <!-- GLOBAL HEADER -->
-    <header>
-      <button class="menu-button">
-        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-      </button>
-      <div class="logo-container">
-        <img src="./assets/logo.png" alt="">
+  
+  <main>
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>DesignWright</h1>
+        <p>Providing project management design solutions since 2021</p>
       </div>
-      <nav class="nav-display">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/team/">Our Team</a>
-        <a href="/work/">Past Work</a>
-      </nav>
-    </header>
-    <!-- GLOBAL HEADER -->
-  
-    <main>
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>DesignWright</h1>
-          <p>Providing design solutions since 2021</p>
-        </div>
-		<img class="hero-image-bg" src="./assets/blob.png" alt="">
-        <img class="hero-image" src="./assets/hero-image.png" alt="">
-      </section>
-      <section class="discover-section">
-        <h1>Discover DesignWright</h1>
-        <div class="cards">
-          <div class="card">
+      <div class="hero-image-container">
+        <img src="./assets/home/hero-section/hero-image.svg" alt="image of simple art for hero section">
+      </div>
+    </section>
+    <div class="down-arrow-container">
+      <img src="./assets/home/down-arrow.svg" alt="image of a down arrow">
+    </div>
+    <section class="discover-section">
+      <h1>Discover DesignWright</h1>
+      <div class="cards">
+        <div class="card">
+          <div class="card-heading">
+            <div class="flag-container">
+              <img src="./assets/home/discover-section/flag.svg" alt="image of flag accent for card heading">
+            </div>
             <h2>About</h2>
-            <p>DesignWright was founded by a group of Purdue students to help clients who have design problems in need of solving.</p>
-            <a class="card-link" href="/about/">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           </div>
-          <div class="card">
-            <h2>Our Team</h2>
-            <p>Our members each have a specific role within our team that is critical to the team's success.</p>
-            <a class="card-link" href="/team/">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
-          <div class="card">
-            <h2>Past Work</h2>
-            <p>In the past, our team's members have worked on a variety of projects with various company sponsors.</p>
-            <a class="card-link" href="/work/">Learn more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
-          </div>
+          <p>DesignWright was founded by a group of Purdue students to help clients who have design problems in need of solving.</p>
+          <a class="card-link" href="/about/">Learn more about our company and what we can do for you here! <img src="./assets/home/discover-section/right-arrow.svg" alt="image of right arrow"> </a>
         </div>
-      </section>
-    </main>
-  
-    <!-- GLOBAL FOOTER -->
-    <footer>
-      <p>Interested in working together? We'd love to chat!</p>
-      <p><a href="mailto:hello@designwright.dev">hello@designwright.dev</a></p>
-    </footer>
-    <!-- GLOBAL FOOTER -->
+        <div class="card">
+          <div class="card-heading">
+            <div class="flag-container">
+              <img src="./assets/home/discover-section/flag.svg" alt="image of flag accent for card heading">
+            </div>
+            <h2>Our Team</h2>
+          </div>
+          <p>Our members each have a specific role within our team that is critical to the team's success.</p>
+          <a class="card-link" href="/team/">Learn more about our team members and their specializations here! <img src="./assets/home/discover-section/right-arrow.svg" alt="image of right arrow"></a>
+        </div>
+        <div class="card">
+          <div class="card-heading">
+            <div class="flag-container">
+              <img src="./assets/home/discover-section/flag.svg" alt="image of flag accent for card heading">
+            </div>
+            <h2>Past Work</h2>
+          </div>
+          <p>In the past, our team's members have worked on a variety of projects with various company sponsors.</p>
+          <a class="card-link" href="/work/">See past work examples here, to see if we would be a good fit for you! <img src="./assets/home/discover-section/right-arrow.svg" alt="image of right arrow"></a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  </div>
+  <!-- GLOBAL FOOTER -->
+  <footer>
+    <p>Interested in working together? We'd love to chat!</p>
+    <a href="mailto:hello@designwright.dev">hello@designwright.dev</a>
+  </footer>
+  <!-- GLOBAL FOOTER -->
+  
 </body>
 </html>
