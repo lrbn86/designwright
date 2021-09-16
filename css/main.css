@@ -116,6 +116,10 @@ section > h1 {
   margin-bottom: 5rem
 }
 
+.team-heading > img {
+  width: 10rem;
+}
+
 @media (min-width: 1000px) {
 
   header {
