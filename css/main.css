@@ -112,6 +112,10 @@ section > h1 {
   border-radius: 20px;
 }
 
+.member {
+  margin-bottom: 5rem
+}
+
 @media (min-width: 1000px) {
 
   header {
