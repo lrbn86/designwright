@@ -107,20 +107,23 @@ section > h1 {
   width: 100%;
 }
 
+.avatar {
+  width: 10em;
+  border-radius: 20px;
+}
+
 @media (min-width: 1000px) {
 
   header {
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
   }
 
   nav {
     flex-direction: row;
   }
 
-  section {
+  header, section, .team-container {
     max-width: 1440px;
     margin: 0 auto;
   }
@@ -164,5 +167,18 @@ section > h1 {
 
   .card-link {
     font-size: 18px;
+  }
+
+  .avatar {
+    width: 20em;
+  }
+
+  .member {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  .member-desc {
+    padding-left: 2rem;
   }
 }
