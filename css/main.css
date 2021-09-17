@@ -54,6 +54,11 @@ section > h1 {
   padding: 2rem;
 }
 
+
+.flag-container img {
+  width: 100%;
+}
+
 .card {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
@@ -65,8 +70,8 @@ section > h1 {
 
 .card-heading {
   position: absolute;
-  top: 1rem;
-  left: -.6rem;
+  top: 2rem;
+  left: -1rem;
 }
 
 .card-heading > h2 {
@@ -95,12 +100,11 @@ section > h1 {
 }
 
 .logo-container {
-  width: 80%;
+  width: 40%;
 }
 
 .logo-container img {
   width: 100%;
-  height: 100%;
 }
 
 .hero-image-container img {
@@ -116,7 +120,7 @@ section > h1 {
   margin-bottom: 5rem
 }
 
-.team-heading > img {
+.page-heading > img {
   width: 10rem;
 }
 
@@ -125,38 +129,31 @@ section > h1 {
   margin-bottom: 5rem;
 }
 
-.about-cards {
-  padding: 2rem;
+.page-heading {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
 }
 
-.about-card {
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+.page-heading img {
+  width: 100%;
+}
+
+.tabs-container {
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.05);
   padding: 1rem;
-  position: relative;
-  padding-top: 15rem;
-  height:988px;
-  margin-bottom: 5rem;
+  border-radius: 5px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.about-card-content > p {
-  font-size: 28px;
+.tab-content-section {
+  display: flex;
 }
 
-.about-card-heading {
-  color: #fff;
-  position: absolute;
-  top: 1.5rem;
-  left: -2.5rem;
+.tab-content-section img {
+  width: 100%;
 }
-
-.about-card-heading > h2 {
-  position: absolute;
-  top: 2.5rem;
-  left: 1rem;
-  font-size: 50px;
-}
-
 
 @media (min-width: 1000px) {
 
@@ -206,11 +203,6 @@ section > h1 {
     height: 545px;
   }
 
-  .card > p {
-    font-size: 28px;
-    padding-bottom: 5rem;
-  }
-
   .card-link {
     font-size: 18px;
   }
@@ -234,19 +226,23 @@ section > h1 {
     margin-bottom: 8rem;
   }
 
-  .team-heading {
+  .page-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .team-heading > img {
+  .page-heading > img {
     width: 430px;
     height: 773px;
   }
 
-  .team-heading > p {
+  .page-heading > p {
     font-size: 30px;
     padding-right: 8rem;
+  }
+
+  .page-heading-img-container {
+    width: 35%;
   }
 }
