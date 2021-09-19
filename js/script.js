@@ -10,4 +10,5 @@ $('.close-menu-btn').click(() => {
 
 $('.nav-container').click(() => {
   $('.nav-container').fadeOut();
+  $('body').removeClass('noscroll');
 });
