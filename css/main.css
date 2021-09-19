@@ -10,7 +10,7 @@
 * {
   font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
-  /* outline: 1px red solid; */
+  outline: 1px red solid;
 }
 
 .noscroll {
@@ -111,8 +111,34 @@ nav > a {
   padding: 1rem 0;
   background-color: #fff;
   margin: 1rem;
+  border-radius: 5px;
 }
 
 @media (min-width: 1000px) {
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
+  .nav-container {
+    display: block;
+    position: static;
+    color: inherit;
+    overflow: auto;
+    background-color: inherit;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav > a {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .menu-btn-container, .close-menu-btn-container {
+    display: none;
+  }
 }
