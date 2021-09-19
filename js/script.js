@@ -5,6 +5,7 @@ $('.menu-btn').click(() => {
 
 $('.close-menu-btn').click(() => {
   $('.nav-container').fadeOut();
+  $('body').removeClass('noscroll');
 })
 
 $('.nav-container').click(() => {
