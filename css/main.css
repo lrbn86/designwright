@@ -8,18 +8,39 @@
 }
 
 * {
-  font-family: 'Source Sans Pro', sans-serif;
   box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
   outline: 1px red solid;
-}
-
-.noscroll {
-  overflow: hidden;
 }
 
 body {
   color: #232E33;
-  font-size: 1.5rem;
+  font-size: 8vw;
+}
+
+.cards {
+  padding: 1rem;
+}
+
+.card {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+  padding: 5%;
+  padding-top: 45%;
+  position: relative;
+}
+
+.flag-heading {
+  position: absolute;
+  top: 6%;
+  left: -6.5%;
+}
+
+.flag-heading > h2 {
+  position: absolute;
+  top: -5%;
+  left: 10%;
 }
 
 .close-menu-btn-container {
@@ -29,6 +50,11 @@ body {
 
 .close-menu-btn {
   padding: 1rem;
+  background-color: var(--main);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 8vw;
 }
 
 footer {
@@ -48,31 +74,6 @@ header {
   padding: 1rem;
 }
 
-.home-cards {
-  padding: 1rem;
-}
-
-.home-card {
-  position: relative;
-  padding: 1rem;
-  padding-top: 6rem;
-  margin-bottom: 5rem;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-}
-
-.home-card-heading {
-  position: absolute;
-  top: 1.5rem;
-  left: -1rem;
-}
-
-.home-card-heading > h2 {
-  position: absolute;
-  top: -.5rem;
-  left: 2.0rem;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -85,9 +86,15 @@ img {
 .menu-btn {
   display: block;
   padding: 1rem;
+  background-color: var(--main);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 8vw;
 }
 
 .nav-container {
+  background-color: rgba(0, 0, 0, 0.85);
   display: none;
   position: fixed;
   top: 0;
@@ -95,7 +102,6 @@ img {
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem;
 }
 
@@ -104,28 +110,80 @@ nav {
 }
 
 nav > a {
-  color: inherit;
-  text-decoration: none;
+  color: #fff;
   display: block;
+  text-decoration: none;
   text-align: center;
-  padding: 1rem 0;
-  background-color: #fff;
-  margin: 1rem;
+  background-color: var(--main);
   border-radius: 5px;
+  padding: 1rem 0;
+  margin: 1rem;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+.team-card {
+  margin-bottom: 5rem;
+}
+
+.team-card-heading {
+  text-align: center;
+}
+
+.team-card-heading > * {
+  margin: 0;
+  padding: 0;
+}
+
+.team-card-heading > img {
+  border-radius: 50%;
+}
+
+.team-card-heading-text > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.team-card-heading-text > p {
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+}
+
+
+
 @media (min-width: 1000px) {
+
+  body {
+    font-size: 2vw;
+  }
+  
   header {
     flex-direction: row;
     justify-content: space-around;
   }
 
+  header, main, footer {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .close-menu-btn-container, .menu-btn-container {
+    display: none;
+  }
+
   .nav-container {
-    display: block;
-    position: static;
-    color: inherit;
-    overflow: auto;
     background-color: inherit;
+    color: inherit;
+    display: block;
+    overflow: auto;
+    position: static;
   }
 
   nav {
@@ -138,7 +196,26 @@ nav > a {
     color: inherit;
   }
 
-  .menu-btn-container, .close-menu-btn-container {
-    display: none;
+  .page-heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
   }
+
+  .team-card {
+    display: flex;
+  }
+
+
+  .team-card-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card-img-container > img {
+    max-width: 30%;
+  }
+
+
 }
