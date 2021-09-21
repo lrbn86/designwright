@@ -259,10 +259,6 @@ a {
     padding-left: 3rem;
   }
 
-  .team-card > * {
-    /* flex: 1; */
-  }
-
   .team-card > img {
     width: 400px;
     object-fit: cover;
