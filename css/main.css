@@ -10,7 +10,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Source Sans Pro', sans-serif;
-  outline: 1px red solid;
+  /* outline: 1px red solid; */
 }
 
 body {
@@ -27,7 +27,7 @@ body {
   border-radius: 20px;
   margin-bottom: 2rem;
   padding: 5%;
-  padding-top: 45%;
+  padding-top: 10rem;
   position: relative;
 }
 
@@ -35,6 +35,7 @@ body {
   position: absolute;
   top: 6%;
   left: -6.5%;
+  color: #fff;
 }
 
 .flag-heading > h2 {
@@ -65,6 +66,7 @@ footer {
 footer > a {
   color: inherit;
   text-decoration: none;
+  font-weight: bold;
 }
 
 header {
@@ -124,8 +126,19 @@ nav > a {
   overflow: hidden;
 }
 
+.project {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.project > img {
+  display: inline-block;
+}
+
 section {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .team-card {
@@ -156,6 +169,10 @@ section {
   font-style: italic;
 }
 
+a {
+  color: inherit;
+}
+
 
 
 @media (min-width: 1000px) {
@@ -166,12 +183,18 @@ section {
   
   header {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   header, main, footer {
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
   }
   
   .close-menu-btn-container, .menu-btn-container {
@@ -181,7 +204,7 @@ section {
   .nav-container {
     background-color: inherit;
     color: inherit;
-    display: block;
+    display: block !important;
     overflow: auto;
     position: static;
   }
@@ -204,6 +227,11 @@ section {
 
   .team-card {
     display: flex;
+    justify-content: space-between;;
+  }
+
+  .team-card > * {
+    flex: 1;
   }
 
 
@@ -213,9 +241,16 @@ section {
     align-items: center;
   }
 
-  .team-card-img-container > img {
-    max-width: 30%;
+  .team-card-heading > img {
+    width: 300px;
+    object-fit: cover;
   }
 
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
 }

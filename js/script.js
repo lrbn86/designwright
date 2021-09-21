@@ -1,14 +1,9 @@
 $('.menu-btn').click(() => {
-  $('.nav-container').fadeIn();
-  $('body').toggleClass('noscroll');
+  $('.nav-container').fadeToggle();
+  $('body').addClass('noscroll');
 });
 
 $('.close-menu-btn').click(() => {
-  $('.nav-container').fadeOut();
+  $('.nav-container').fadeToggle();
   $('body').removeClass('noscroll');
 })
-
-$('.nav-container').click(() => {
-  $('.nav-container').fadeOut();
-  $('body').removeClass('noscroll');
-});
