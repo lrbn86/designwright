@@ -62,7 +62,7 @@ body {
   padding: 1rem;
 }
 
-.card > h2, .flag-heading > h2 {
+.card > h2, .flag-heading > h2, .project > h2 {
   background-color: var(--main);
   padding: 2rem;
   border-radius: 20px 20px 0 0;
@@ -154,11 +154,14 @@ nav > a {
 .project {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 1rem;
   margin-bottom: 3rem;
 }
 
-.project > img {
+.project > h2 {
+  margin: 0;
+}
+
+.project > .card-content > img {
   display: inline;
   width: 550px;
 }
