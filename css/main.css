@@ -16,7 +16,7 @@
 .arrow {
   text-align: center;
   color: var(--main);
-  font-size: 5vw;
+  font-size: 100px;
 }
 
 .arrow > p {
