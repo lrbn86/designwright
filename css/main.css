@@ -143,7 +143,8 @@ nav > a {
 }
 
 .project > img {
-  display: inline-block;
+  display: inline;
+  width: 550px;
 }
 
 section {
