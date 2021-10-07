@@ -4,7 +4,7 @@ main > section:nth-child(1) > div {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
@@ -60,6 +60,10 @@ main > section:nth-child(1) > div h3 {
 
 @media (min-width: 812px) {
   
+  main > section:nth-child(1) {
+    padding: 0 10rem;
+  }
+  
   main > section:nth-child(1) > div {
     flex-direction: row;
   }
@@ -72,11 +76,11 @@ main > section:nth-child(1) > div h3 {
     max-width: 1040px;
     margin: 0 auto;
   }
-
+  
   .tab-content-flex {
     flex-direction: row;
   }
-
+  
   .tab-content-flex > div {
     padding-left: 30px;
   }
