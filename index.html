@@ -7,7 +7,7 @@
   <meta name="description" content="DesignWright's website for CGT41101 at Purdue University - West Lafayette, Indiana. Ariana Eskew, Anika Antony, Angela Zhou, Katie Jewell, Jake Donovan, Brandon Nguyen">
   <title>DesignWright | Home</title>
   <link rel="shortcut icon" href="./assets/logo/logo-2.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css" media="all">
   <script src="./js/jquery-3.6.0.min.js" defer></script>
   <script src="./js/script.js" defer></script>
@@ -16,19 +16,19 @@
 
   <!-- GLOBAL HEADER -->
   <header>
-    <div class="logo-container">
-      <img src="./assets/logo/logo-2.png" alt="logo of DesignWright">
+    <a href="/"><img class="logo" src="./assets/logo/final-logo.svg" alt="logo of DesignWright"></a>
+    <div class="menu-btns">
+      <button id="open-menu-btn">
+        <span class="material-icons">menu</span>
+      </button>
+      <button id="close-menu-btn">
+        <span class="material-icons">close</span>
+      </button>
     </div>
-    <div class="menu-btn-container">
-      <button class="menu-btn">Menu</button>
-    </div>
-    <div class="nav-container">
-      <div class="close-menu-btn-container">
-        <button class="close-menu-btn">Close Menu</button>
-      </div>
+    <div id="nav-container">
       <nav>
         <a href="/">Home</a>
-        <a href="/about/">About</a>
+        <a href="/services/">Services</a>
         <a href="/team/">Team</a>
         <a href="/work/">Work</a>
       </nav>
@@ -37,41 +37,38 @@
   <!-- GLOBAL HEADER -->
   
   <main>
-    <section class="top-section">
+    <section>
       <div>
         <h1>DesignWright</h1>
-        <p>Providing project management solutions since 2021</p>
+        <p>Providing project management design solutions since 2021</p>
       </div>
       <div>
-        <img src="./assets/home/hero.png" alt="">
+        <img src="./assets/home/home-hero.svg" alt="">
       </div>
     </section>
-    <div class="arrow">
-      <p>&darr;</p>
+    <div class="down-arrow">
+      <img src="./assets/home/down-arrow.svg" alt="">
     </div>
-    <section class="bottom-section">
-      <h1>Discover DesignWright</h1>
-      <div class="cards">
-        <div class="card">
-          <h2>About</h2>
-          <div class="card-content">
-            <p>DesignWright was founded by a group of Purdue students to secure a client who has a design problem in need of solving.</p>
-            <a href="/about/">Learn more &rarr;</a>
-          </div>
+    <section>
+      <h2>Discover DesignWright</h2>
+      <p>Learn more about who we are and what we can do for you as a team of UX designers and web developers.</p>
+      <div class="panels">
+        <div>
+          <h3>Services</h3>
+          <p>DesignWright was founded by a group of Purdue students to secure a client who has a design problem in need of solving.</p>
+          <a href="/services/">Learn more <span>&rarr;</span></a>
         </div>
-        <div class="card">
-          <h2>Team</h2>
-          <div class="card-content">
-            <p>Our members each have a specific role within our team that is critical to the team's success.</p>
-            <a href="/team/">Learn more &rarr;</a>
-          </div>
+        <img class="divider-line" src="./assets/home/divider.svg" alt="">
+        <div>
+          <h3>Team</h3>
+          <p>Our members each have a specific role within our team that is critical to the team’s success. </p>
+          <a href="./team/">Learn more <span>&rarr;</span></a>
         </div>
-        <div class="card">
-          <h2>Work</h2>
-          <div class="card-content">
-            <p>In the past, our team's members have worked on a variety of projects with various company sponsors.</p>
-            <a href="/work/">Learn more &rarr;</a>
-          </div>
+        <img class="divider-line" src="./assets/home/divider.svg" alt="">
+        <div>
+          <h3>Work</h3>
+          <p>In the past, our team’s members have worked on a variety of projects with various company sponsors. </p>
+          <a href="./work/">Learn more <span>&rarr;</span></a>
         </div>
       </div>
     </section>
