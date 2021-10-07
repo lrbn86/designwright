@@ -7,7 +7,7 @@
   <meta name="description" content="DesignWright's website for CGT41101 at Purdue University - West Lafayette, Indiana. Ariana Eskew, Anika Antony, Angela Zhou, Katie Jewell, Jake Donovan, Brandon Nguyen">
   <title>DesignWright | Team</title>
   <link rel="shortcut icon" href="../assets/logo/logo-2.png" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" media="all" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
   <link rel="stylesheet" href="../css/main.css" media="all">
   <script src="../js/jquery-3.6.0.min.js" defer></script>
   <script src="../js/script.js" defer></script>
@@ -16,19 +16,19 @@
 
   <!-- GLOBAL HEADER -->
   <header>
-    <div class="logo-container">
-      <img src="../assets/logo/logo-2.png" alt="logo of DesignWright">
+    <a href="/"><img class="logo" src="../assets/logo/final-logo.svg" alt="logo of DesignWright"></a>
+    <div class="menu-btns">
+      <button id="open-menu-btn">
+        <span class="material-icons">menu</span>
+      </button>
+      <button id="close-menu-btn">
+        <span class="material-icons">close</span>
+      </button>
     </div>
-    <div class="menu-btn-container">
-      <button class="menu-btn">Menu</button>
-    </div>
-    <div class="nav-container">
-      <div class="close-menu-btn-container">
-        <button class="close-menu-btn">Close Menu</button>
-      </div>
+    <div id="nav-container">
       <nav>
         <a href="/">Home</a>
-        <a href="/about/">About</a>
+        <a href="/about/">Services</a>
         <a href="/team/">Team</a>
         <a href="/work/">Work</a>
       </nav>
@@ -37,92 +37,6 @@
   <!-- GLOBAL HEADER -->
   
   <main>
-    <section class="top-section">
-      <div>
-        <h1>Team</h1>
-        <p>DesignWright is a team of User Experience and Web Designers with a variety of experience and knowledge.</p>
-      </div>
-      <div>
-        <img src="../assets/team/team.png" alt="">
-      </div>
-    </section>
-    <section>
-      <div class="team-cards">
-        <div class="team-card">
-          <img src="../assets/team/ariana.jpg" alt="">
-          <div class="team-card-desc">
-            <div class="team-card-heading">
-              <h2>Ariana Eskew</h2>
-              <p>Project Manager</p>
-            </div>
-            <p>As Project Manager, Ariana Eskew is committed to DesignWright's vision of providing leading project management solutions.</p>
-            <p>Ariana leads the DesignWright team to build experiences and products that ensure complete stakeholder satisfaction.</p>
-            <p>Ariana is a senior studying UX Design at Purdue University. She specializes in visual design and project management.</p>
-            <a class="portfolio-link" href="http://ariana-eskew.webflow.io/" target="_blank" rel="noreferrer noopener">Portfolio</a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="../assets/team/anika.jpg" alt="  <div class="team-card-heading">
-            <div class="team-card-desc">
-            <div class="team-card-heading">
-              <h2>Anika Antony</h2>
-              <p>User Research Lead</p>
-            </div>
-            <p>As User Research Lead, Anika Antony is responsible for leading user experience research efforts and data analysis.</p>
-            <p>Anika is a senior studying UX Design at Purdue University.</p>
-            <a class="portfolio-link" href="https://anikaantony.wordpress.com/" target="_blank" rel="noreferrer noopener">Portfolio</a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="../assets/team/angela.jpg" alt="heading">
-          <div class="team-card-desc">
-            <div class="team-card-heading">
-              <h2>Angela Zhou</h2>
-              <p>User Interface Lead</p>
-            </div>
-            <p>As User Interface Lead, Angela Zhou is responsible for leading the team to create fun and enjoyable interactions between the user and the product or service.</p>
-            <p>Angela is a junior studying UX Design at Purdue University. She specializes in user interfaces.</p>
-            <a class="portfolio-link" href="https://www.angelazhou.me/" target="_blank" rel="noreferrer noopener">Portfolio</a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="../assets/team/katie.jpeg" alt="heading">
-          <div class="team-card-desc">
-            <div class="team-card-heading">
-              <h2>Katie Jewell</h2>
-              <p>Visual Design Lead</p>
-            </div>
-            <p>As Visual Design Lead, Katie Jewell is responsible for leading the ideation phase of user-centered design and creating design systems for product or service implementations.</p>
-            <p>Katie is a senior studying UX Design at Purdue University. She specializes in visual design and user research.</p>
-            <a class="portfolio-link" href="https://katiejewell.portfolio.site/" target="_blank" rel="noreferrer noopener">Portfolio</a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="../assets/team/jake.jpg" alt="">
-          <div class="team-card-desc">
-            <div class="team-card-heading">
-              <h2>Jake Donovan</h2>
-              <p>Virtual Product Integration Lead</p>
-            </div>
-            <p>As Virtual Product Integration Lead, Jake Donovan is responsible for leading the visualization, ideation, and implementation of the project features.</p>
-            <p>Jake is a senior studying Web Programming &amp; Design and Virtual Product Integration at Purdue University. He specializes in product lifecycle management.</p>
-            <a class="portfolio-link" href="https://jakedono17.wixsite.com/website" target="_blank" rel="noreferrer noopener">Portfolio</a>
-          </div>
-        </div>
-        <div class="team-card">
-          <img src="../assets/team/brandon.jpg" alt="">
-          <div class="team-card-desc">
-            <div class="team-card-heading">
-              <h2>Brandon Nguyen</h2>
-              <p>Web Design Lead</p>
-            </div>
-            <p>As Web Design Lead, Brandon Nguyen is responsible for the design and development of websites and web applications for both DesignWright and their stakeholders.</p>
-            <p>Brandon is a senior studying Web Programming &amp; Design at Purdue University. He specializes in front-end web development.</p>
-            <a class="portfolio-link" href="https://www.brandonnguyen.dev/" target="_blank" rel="noreferrer noopener">Portfolio</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- GLOBAL FOOTER -->
