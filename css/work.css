@@ -37,7 +37,7 @@
 }
 
 .tab-content {
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .tab2 {
@@ -52,5 +52,9 @@
   .tabs-container {
     max-width: 1040px;
     margin: 0 auto;
+  }
+
+  .tab-content {
+    padding: 5rem;
   }
 }
