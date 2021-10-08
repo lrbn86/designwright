@@ -6,9 +6,14 @@
 :root {
   --accent: #6e90a0;
   --page-title-clr: #232e33;
+  --page-title-font-size: 64pt;
   --heading1-clr: #6e90a0;
+  --heading1-font-size: 36pt;
   --heading2-clr: #232e33;
+  --heading2-font-size: 22pt;
   --body-text-clr: #232e33;
+  --body-text-font-size: 16pt;
+
 }
 
 * {
