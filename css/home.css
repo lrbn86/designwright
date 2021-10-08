@@ -8,7 +8,7 @@ main > section:nth-child(3) {
   padding-bottom: 5rem;
 }
 
-main > section:nth-child(3) > h2 {
+.section-header > h2 {
   color: var(--accent);
 }
 
@@ -71,11 +71,16 @@ main > section:nth-child(3) > h2 {
     padding-bottom: 15rem;
   }
 
-  main > section:nth-child(3) > h2 {
+  .section-header {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
+  .section-header > h2 {
     font-size: 36px;
   }
 
-  main > section:nth-child(3) > p {
+  .section-header > p {
     font-size: 16px;
   }
 
@@ -85,6 +90,9 @@ main > section:nth-child(3) > h2 {
     border-radius: 20px;
     padding: 1rem;
     background-color: #fff;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-top: 3rem;
   }
 
   .panels > div {
