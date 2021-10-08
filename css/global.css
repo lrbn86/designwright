@@ -5,15 +5,6 @@
 
 :root {
   --accent: #6e90a0;
-  --page-title-clr: #232e33;
-  --page-title-font-size: 64pt;
-  --heading1-clr: #6e90a0;
-  --heading1-font-size: 36pt;
-  --heading2-clr: #232e33;
-  --heading2-font-size: 22pt;
-  --body-text-clr: #232e33;
-  --body-text-font-size: 16pt;
-
 }
 
 * {
@@ -56,7 +47,6 @@ header {
 }
 
 #open-menu-btn > span, #close-menu-btn > span {
-  font-size: 3.2rem;
   color: var(--accent);
 }
 
@@ -79,7 +69,6 @@ nav > a {
   text-decoration: none;
   text-align: center;
   padding: 2rem;
-  font-size: 36px;
   border-bottom: 1px solid var(--accent);
 }
 
@@ -101,7 +90,6 @@ footer > a {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
-  font-size: 18px;
 }
 
 @media (min-width: 1024px) {
@@ -131,7 +119,6 @@ footer > a {
   nav > a {
     border: none;
     display: inline;
-    font-size: 21px;
   }
 
   nav > a:first-child {

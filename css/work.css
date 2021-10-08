@@ -1,18 +1,5 @@
 /* CSS for Work */
 
-h1 {
-  color: var(--heading1-clr);
-}
-
-h2 {
-  color: var(--heading2-clr);
-}
-
-p {
-  font-size: var(--body-text-font-size);
-  color: var(--body-text-clr);
-}
-
 .work-hero {
   display: flex;
   flex-direction: column;
@@ -74,14 +61,6 @@ p {
 
 @media (min-width: 1024px) {
   
-  h1 {
-    font-size: var(--heading1-font-size);
-  }
-  
-  h2 {
-    font-size: var(--heading2-font-size);
-  }
-  
   main > section:nth-child(1) {
     max-width: 1040px;
     margin: 0 auto;
@@ -89,11 +68,6 @@ p {
   
   .work-hero {
     flex-direction: row;
-  }
-  
-  .tabs {
-    font-size: 35px;
-    width: 520px;
   }
   
   .tabs-container {
