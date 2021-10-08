@@ -16,7 +16,6 @@ p {
 .work-hero {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .tabs-container {
@@ -28,6 +27,7 @@ p {
 
 .tab-header {
   display: flex;
+  justify-content: space-between;
 }
 
 .tabs {
