@@ -62,7 +62,7 @@ main > section:nth-child(1) {
   }
 
   main > section:nth-child(3) {
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     padding-top: 2rem;
     padding-bottom: 15rem;
   }
