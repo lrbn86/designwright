@@ -13,6 +13,18 @@
   /* outline: 1px red solid; */
 }
 
+h2, h4, p {
+  color: #232e33;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  color: #6e90a0;
+}
+
 body {
   margin: 0;
 }
@@ -39,6 +51,10 @@ header {
   border: none;
   padding: 1rem;
   background-color: #fff;
+}
+
+#open-menu-btn > span, #close-menu-btn > span {
+  font-size: 35pt;
 }
 
 #close-menu-btn {
@@ -70,6 +86,7 @@ nav > a {
   text-align: center;
   padding: 2rem;
   border-bottom: 1px solid var(--accent);
+  font-size: 16pt;
 }
 
 nav > a:first-child {
@@ -125,4 +142,23 @@ footer > a {
     border: none;
   }
 
+}
+
+@media (min-width: 1024px) {
+
+  h2 {
+    font-size: 64pt;
+  }
+
+  h3 {
+    font-size: 36pt;
+  }
+
+  h4 {
+    font-size: 22pt;
+  }
+
+  p {
+    font-size: 16pt;
+  }
 }
