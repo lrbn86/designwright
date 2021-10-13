@@ -1,0 +1,68 @@
+/* CSS for Team */
+
+.team-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.team-item {
+  margin: 15px;
+  text-align: center;
+}
+
+.team-item-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-item-img {
+  width: 80%;
+  border-radius: 20px;
+}
+
+.team-item-name {
+  color: var(--accent);
+}
+
+.team-item-name, .team-item-role {
+  margin: 0;
+}
+
+.team-item-bio {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+
+  main {
+    max-width: 1340px;
+    margin: 0 auto;
+  }
+
+  .team-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .team-item > * {
+    flex: 1;
+  }
+
+  .team-item-1 {
+    text-align: left;
+  }
+
+  .team-item-bio {
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+
+}
